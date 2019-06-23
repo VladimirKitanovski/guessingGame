@@ -21,7 +21,7 @@
         echo("Please try guessing a number from 0 to 99");
       } else if ( $_GET['guess'] > 99) {
       echo("Please try guessing a number from 0 to 99");
-      }  else if ( $_GET['guess'] < 69 ) {
+      }  else if ( $_GET['guess'] < 69) {
           echo("Your guess is too low");
       } else if ( $_GET['guess'] > 69) {
           echo("Your guess is to high");
