@@ -17,13 +17,15 @@
           echo("Your guess is too short");
       } else if ( ! is_numeric($_GET['guess']) ) {
           echo("Your guess is not a number");
-      } else if ( $_GET['guess'] > 69 ) {
+      } else if ( $_GET['guess'] < 0) {
+        echo("Please try guessing a number from 0 to 99");
+      } else if ( $_GET['guess'] > 99) {
+      echo("Please try guessing a number from 0 to 99");
+      }  else if ( $_GET['guess'] < 69 ) {
           echo("Your guess is too low");
-      } else if ( $_GET['guess'] < 69) {
+      } else if ( $_GET['guess'] > 69) {
           echo("Your guess is to high");
-      } else if ( $_GET['guess'] > 0 || $_GET['guess'] < 99) {
-          echo("Please try again guessing a number from 0 to 99");
-      } else {
+      }  else {
           echo("Congratulations - You are right");
       }
       
